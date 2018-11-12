@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import RiskType, RiskField
+from .models import RiskType, RiskField, RiskFieldOption
 
 
 class RiskFieldInline(admin.StackedInline):
@@ -12,3 +12,4 @@ class RiskTypeAdmin(admin.ModelAdmin):
 
 
 admin.site.register(RiskType, RiskTypeAdmin)
+admin.site.register(RiskFieldOption)

@@ -34,3 +34,11 @@ class RiskField(models.Model):
 
     def __str__(self):
         return 'Field: {}, type: {}'.format(self.name, self.field_type)
+
+
+class RiskFieldOption(models.Model):
+    risk_field = models.ForeignKey(RiskField, related_name='options', on_delete=models.CASCADE)
+    name = models.CharField(max_length=64)
+
+    def __str__(self):
+        return 'Option: {} of field: {}'.format(self.name, self.risk_field.name)
