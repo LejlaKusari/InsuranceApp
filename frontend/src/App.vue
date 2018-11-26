@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/new-risk-model">Create your risk model</router-link> |
+      <router-link to="/risks-list">Risk models list</router-link>
     </div>
     <router-view/>
   </div>
@@ -20,9 +20,9 @@
   padding: 30px;
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #061f2b;
     &.router-link-exact-active {
-      color: #42b983;
+      color: #00a6d8;
     }
   }
 }
