@@ -12,11 +12,6 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
       path: '/new-risk-entry/:id',
       name: 'risk-entry',
       // props: true,
