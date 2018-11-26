@@ -1,0 +1,10 @@
+{
+    "prod": {
+        "aws_region": "us-east-2",
+        "django_settings": "insuranceapp.settings",
+        "profile_name": "default",
+        "project_name": "britecoreinsura",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-lk8klmf99"
+    }
+}
