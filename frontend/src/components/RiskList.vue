@@ -2,7 +2,7 @@
   <div class="container">
     <ul class="list-group"> 
       <li class="list-group-item list-group-item-action list-group-item-light" v-for="risk in risks" :key="risk">
-        <a :href="`new-risk-entry/${risk.pk}`" style="float: left">{{ risk.name }}</a>
+        <router-link :to="`new-risk-entry/${risk.pk}`" style="float: left">{{ risk.name }}</router-link>
       </li>
     </ul>
   </div>
