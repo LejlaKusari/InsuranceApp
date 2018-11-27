@@ -140,7 +140,7 @@ export default new Vuex.Store({
         commit("ADD_FORM_ERROR", "");
       }
       axios
-        .post("http://127.0.0.1:8000/risks/create/", obj)
+        .post("https://4jsq8d101c.execute-api.us-east-2.amazonaws.com/prod/risks/create/", obj)
         .then(function(response) {
           // eslint-disable-next-line
           console.log(response);
@@ -154,7 +154,7 @@ export default new Vuex.Store({
     },
     getFormSchema({commit}, id) {
       axios
-        .get(`http://127.0.0.1:8000/risks/${id}/`)
+        .get(`https://4jsq8d101c.execute-api.us-east-2.amazonaws.com/prod/risks/${id}/`)
         .then(function(response) {
           commit("GET_FORM_SCHEMA", 
             response.data.fields.map(field =>
@@ -186,7 +186,7 @@ export default new Vuex.Store({
     },
     getRisks({commit}) {
       axios
-        .get('http://127.0.0.1:8000/risks/list/')
+        .get('https://4jsq8d101c.execute-api.us-east-2.amazonaws.com/prod/risks/list/')
         .then(function(response) {
           commit("GET_RISKS", response.data.results)
         })
@@ -197,7 +197,7 @@ export default new Vuex.Store({
     },
     submitEntry({commit, state}, obj) {
       axios
-        .post("http://127.0.0.1:8000/risks/entry/", obj)
+        .post("https://4jsq8d101c.execute-api.us-east-2.amazonaws.com/prod/risks/entry/", obj)
         .then(function(response) {
           // eslint-disable-next-line
           console.log(response);
