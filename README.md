@@ -32,6 +32,7 @@ The frontend is implemented in VueJS, also using Vuex for state management. Fron
 - Create virtual environment: `virtualenv -p python3 venv`
 - Install dependencies: `pip install -r requirements.txt`
 - Setup a postgres database on your system and edit the databases portion in `settings.py` according to your setup
+- Install and run MongoDB: `sudo service mongod start`
 - Run migrations: `./manage.py migrate`
 - Start local server: `./manage.py runserver`
 - The backend api is now up and running at `http://localhost:8000`
