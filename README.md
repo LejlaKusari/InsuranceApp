@@ -32,6 +32,7 @@ The frontend is implemented in VueJS, also using Vuex for state management. Fron
 - Create virtual environment: `virtualenv -p python3 venv`
 - Install dependencies: `pip install -r requirements.txt`
 - Setup a postgres database on your system and edit the databases portion in `settings.py` according to your setup
+- Install and run MongoDB: `sudo service mongod start`
 - Run migrations: `./manage.py migrate`
 - Start local server: `./manage.py runserver`
 - The backend api is now up and running at `http://localhost:8000`
@@ -48,4 +49,4 @@ The backend api is deployed in AWS Lambda, with the help of Zappa and Zappa Djan
 - POST: https://7esrxsciql.execute-api.us-east-1.amazonaws.com/prod/risks/create/ - Create a new risk model
 - POST: https://7esrxsciql.execute-api.us-east-1.amazonaws.com/prod/risks/entry/ - Create a new entry for a particular risk model
 
-The frontend is deployed in Netlify and is currently live at: `https://paste-link-here.com`
+The frontend is deployed in Netlify and is currently live at: https://kind-babbage-fdcdff.netlify.com/
