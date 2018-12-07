@@ -43,9 +43,9 @@ The frontend is implemented in VueJS, also using Vuex for state management. Fron
 
 ## Deployment
 The backend api is deployed in AWS Lambda, with the help of Zappa and Zappa Django Utils: the endpoints available are listed below:
-- GET : https://4jsq8d101c.execute-api.us-east-2.amazonaws.com/prod/risks/:pk - Retrieve a single risk model through it's primary key
-- GET: https://4jsq8d101c.execute-api.us-east-2.amazonaws.com/prod/risks/list - List a list of risk models, ordered by last created, paginated
-- POST: https://4jsq8d101c.execute-api.us-east-2.amazonaws.com/prod/risks/create/ - Create a new risk model
-- POST: https://4jsq8d101c.execute-api.us-east-2.amazonaws.com/prod/risks/entry/ - Create a new entry for a particular risk model
+- GET : https://7esrxsciql.execute-api.us-east-1.amazonaws.com/prod/risks/:pk - Retrieve a single risk model through it's primary key
+- GET: https://7esrxsciql.execute-api.us-east-1.amazonaws.com/prod/risks/list - List a list of risk models, ordered by last created, paginated
+- POST: https://7esrxsciql.execute-api.us-east-1.amazonaws.com/prod/risks/create/ - Create a new risk model
+- POST: https://7esrxsciql.execute-api.us-east-1.amazonaws.com/prod/risks/entry/ - Create a new entry for a particular risk model
 
 The frontend is deployed in Netlify and is currently live at: `https://paste-link-here.com`
